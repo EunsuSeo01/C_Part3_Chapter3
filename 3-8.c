@@ -12,7 +12,7 @@ int main(void) {
 	stream1 = fopen("data4.txt", "r");
 	stream2 = fopen("data5.txt", "w");
 
-	fscanf(stream1, "%s %d %d %d \n", name, &kor, &eng, &total);	// 파일에서 내용 입력받아서
+	fscanf(stream1, "%s %d %d %d \n", name, &kor, &eng, &total);	// 형식에 맞게 파일에서 내용 입력받음.
 	fprintf(stream2, "%s %d %d %d \n", name, kor, eng, total);		// 새 파일에 출력시킴. -> 복사.
 	// fprintf(stdout, "%s %d %d %d \n", name, kor, eng, total);	// 모니터에 출력.
 
